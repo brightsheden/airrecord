@@ -145,7 +145,7 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://airrecord_user:UGjLYfN0YP88juJ6pHZbayekAzz5ZlZ7@dpg-cror1l68ii6s738t8hp0-a/airrecord',
+        default='postgresql://arrecord_user:kdx3tCJ4kFaONtXnkTEGVJH3Xp45SSyS@dpg-csb5d19u0jms73e3c3p0-a/arrecord',
         conn_max_age=600
     )
 }
