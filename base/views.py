@@ -81,6 +81,10 @@ def create_equipment(request):
 @permission_classes([IsAuthenticated])
 def update_equipment(request, pk):
     try:
+        user = request.user
+        if user.user_type != 'user':
+            return Response({"message":"You are not authorized to perform this action"}, status=status.HTTP_403_FORBIDDEN)
+
         equipment = Equipment.objects.get(pk=pk)
     except Equipment.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
