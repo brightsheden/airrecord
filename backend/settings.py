@@ -145,7 +145,7 @@ DATABASES = {
 DATABASES = {
      'default': dj_database_url.config(
          # Replace this value with your local database's connection string.
-         default='postgresql://airspacedb_user:pASNpMX52ndJuhck3jUoqWKaBTpWn2Rp@dpg-ct1en0pu0jms73ceq3fg-a/airspacedb',
+         default='postgresql://airspacedb_71tg_user:B5vebWrL5HtGXtdytAeIfFM4eOqzeY5O@dpg-ctohhht2ng1s73biuhhg-a/airspacedb_71tg',
          conn_max_age=600
      )
  }
